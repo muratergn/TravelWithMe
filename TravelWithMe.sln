@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{D3513F9C-31CD-4970-ADC8-78F7BFF98156}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Event", "Event", "{5E250FCC-656C-46D8-87F2-0ACC9B47BDF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelWithMe.Event", "Services\Event\TravelWithMe.Event\TravelWithMe.Event.csproj", "{99839A5A-1F51-4BE5-A7A3-361949876D7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99839A5A-1F51-4BE5-A7A3-361949876D7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99839A5A-1F51-4BE5-A7A3-361949876D7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99839A5A-1F51-4BE5-A7A3-361949876D7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99839A5A-1F51-4BE5-A7A3-361949876D7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5E250FCC-656C-46D8-87F2-0ACC9B47BDF8} = {D3513F9C-31CD-4970-ADC8-78F7BFF98156}
+		{99839A5A-1F51-4BE5-A7A3-361949876D7E} = {5E250FCC-656C-46D8-87F2-0ACC9B47BDF8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E0A535B-0FBF-4512-8C26-1C4AD58E8619}
+	EndGlobalSection
+EndGlobal
