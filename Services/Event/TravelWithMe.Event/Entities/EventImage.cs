@@ -1,7 +1,7 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace GezginBulusma.Event.Entities
+namespace TravelWithMe.Event.Entities
 {
     public class EventImage
     {

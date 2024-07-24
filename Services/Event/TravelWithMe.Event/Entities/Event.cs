@@ -26,7 +26,7 @@ namespace TravelWithMe.Event.Entities
         public User Organizer { get; set; }
 
 
-        [BsonRepresentation(BsonType.ObjectId)]
+        /*[BsonRepresentation(BsonType.ObjectId)]
         public string EventDetailId { get; set; }
 
 
@@ -35,7 +35,7 @@ namespace TravelWithMe.Event.Entities
 
 
         [BsonIgnore]
-        public List<EventImage> Images { get; set; }
+        public List<EventImage> Images { get; set; }*/
 
     }
 }
