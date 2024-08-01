@@ -1,0 +1,6 @@
+@TravelWithMe.InviteCode_HostAddress = http://localhost:5106
+
+GET {{TravelWithMe.InviteCode_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

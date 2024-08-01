@@ -6,5 +6,7 @@
         public string Agenda { get; set; }
         public string Notes { get; set; }
         public string EventId { get; set; }
+        public decimal ParticipantNum { get; set; }
+        public decimal ParticipantLimit { get; set; }
     }
 }

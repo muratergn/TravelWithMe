@@ -11,7 +11,8 @@ namespace TravelWithMe.Event.Entities
         public string Description { get; set; }
         public string Agenda { get; set; }
         public string Notes { get; set; }
-
+        public decimal ParticipantNum { get; set; }
+        public decimal ParticipantLimit { get; set; }
 
         [BsonRepresentation(BsonType.ObjectId)]
         public string EventId { get; set; }
