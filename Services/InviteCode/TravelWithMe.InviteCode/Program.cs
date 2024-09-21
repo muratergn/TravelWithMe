@@ -22,6 +22,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+//deneme
 
 app.UseHttpsRedirection();
 

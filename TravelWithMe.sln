@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravelWithMe.Event", "Servi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InviteCode", "InviteCode", "{F2CB2731-4839-4871-92B6-DF5425FC6009}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelWithMe.InviteCode", "TravelWithMe.InviteCode\TravelWithMe.InviteCode.csproj", "{F0D12C9A-324C-4C0A-A1EA-C7D56B219F33}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelWithMe.InviteCode", "Services\InviteCode\TravelWithMe.InviteCode\TravelWithMe.InviteCode.csproj", "{F0D12C9A-324C-4C0A-A1EA-C7D56B219F33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
