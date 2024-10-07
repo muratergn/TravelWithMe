@@ -6,7 +6,9 @@ using TravelWithMe.Travel.Application.Features.Mediator.Queries.TravelQueries;
 
 namespace TravelWithMe.Travel.WebApi.Controllers
 {
-    public class TravelController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class TravelController : ControllerBase
     {
         private readonly IMediator _mediator;
 
@@ -18,11 +20,11 @@ namespace TravelWithMe.Travel.WebApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetTravelList()
         {
-            var result = await _mediator.Send( new GetTravelQuery());
+            var result = await _mediator.Send(new GetTravelQuery());
             return Ok(result);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("travel/{id}")]
         public async Task<IActionResult> GetTravelById(string id)
         {
             var result = await _mediator.Send(new GetTravelByIdQuery(id));
@@ -37,20 +39,20 @@ namespace TravelWithMe.Travel.WebApi.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddTravel(CreateTravelCommand command)
+        public async Task<IActionResult> AddTravel([FromBody] CreateTravelCommand command)
         {
             await _mediator.Send(command);
             return Ok("Gezi planı başarıyla oluşturuldu");
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpdateTravel(UpdateTravelCommand command)
+        public async Task<IActionResult> UpdateTravel([FromBody] UpdateTravelCommand command)
         {
             await _mediator.Send(command);
             return Ok("Gezi planı başarıyla güncellendi");
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> RemoveTravel(string id)
         {
             await _mediator.Send(new RemoveTravelCommand(id));
