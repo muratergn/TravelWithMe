@@ -21,13 +21,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{0E220888-8B4C-4D39-B4E3-27BD4C5F8571}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelWithMe.Travel.Application", "Services\Travel\Core\TravelWithMe.Travel.Application\TravelWithMe.Travel.Application.csproj", "{A05699F7-1C40-4C56-AF10-964C85F3A6C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravelWithMe.Travel.Application", "Services\Travel\Core\TravelWithMe.Travel.Application\TravelWithMe.Travel.Application.csproj", "{A05699F7-1C40-4C56-AF10-964C85F3A6C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelWithMe.Travel.Domain", "Services\Travel\Core\TravelWithMe.Travel.Domain\TravelWithMe.Travel.Domain.csproj", "{A2401CBD-550B-4599-82C7-1AF89C01CDC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravelWithMe.Travel.Domain", "Services\Travel\Core\TravelWithMe.Travel.Domain\TravelWithMe.Travel.Domain.csproj", "{A2401CBD-550B-4599-82C7-1AF89C01CDC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelWithMe.Travel.Persistence", "Services\Travel\Infrastructure\Persistence\TravelWithMe.Travel.Persistence.csproj", "{2976832A-D578-4C57-9C9B-4DD33FCF1C4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravelWithMe.Travel.Persistence", "Services\Travel\Infrastructure\Persistence\TravelWithMe.Travel.Persistence.csproj", "{2976832A-D578-4C57-9C9B-4DD33FCF1C4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelWithMe.Travel.WebApi", "Services\Travel\Presentation\TravelWithMe.Travel.WebApi\TravelWithMe.Travel.WebApi.csproj", "{B298F8CB-6853-43EA-B502-4527201379F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravelWithMe.Travel.WebApi", "Services\Travel\Presentation\TravelWithMe.Travel.WebApi\TravelWithMe.Travel.WebApi.csproj", "{B298F8CB-6853-43EA-B502-4527201379F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OpenIddict", "OpenIddict", "{B16794C0-1C5A-4914-BEA2-29D9F2C0915A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenIddict.AuthorizationServer", "OpenIddict.AuthorizationServer\OpenIddict.AuthorizationServer.csproj", "{B3968F28-5410-462E-934F-B454E94AE367}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +63,10 @@ Global
 		{B298F8CB-6853-43EA-B502-4527201379F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B298F8CB-6853-43EA-B502-4527201379F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B298F8CB-6853-43EA-B502-4527201379F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3968F28-5410-462E-934F-B454E94AE367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3968F28-5410-462E-934F-B454E94AE367}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3968F28-5410-462E-934F-B454E94AE367}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3968F28-5410-462E-934F-B454E94AE367}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,6 +84,7 @@ Global
 		{A2401CBD-550B-4599-82C7-1AF89C01CDC3} = {8C2C525C-ED09-4BA1-A59F-59822B536971}
 		{2976832A-D578-4C57-9C9B-4DD33FCF1C4A} = {B19A8266-0E77-49B7-B1DE-8545D2307314}
 		{B298F8CB-6853-43EA-B502-4527201379F8} = {0E220888-8B4C-4D39-B4E3-27BD4C5F8571}
+		{B3968F28-5410-462E-934F-B454E94AE367} = {B16794C0-1C5A-4914-BEA2-29D9F2C0915A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2E0A535B-0FBF-4512-8C26-1C4AD58E8619}

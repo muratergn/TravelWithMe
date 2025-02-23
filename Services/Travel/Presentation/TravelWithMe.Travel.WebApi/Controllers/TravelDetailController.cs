@@ -5,6 +5,8 @@ using TravelWithMe.Travel.Application.Features.CQRS.Queries.TravelDetailQueries;
 
 namespace TravelWithMe.Travel.WebApi.Controllers
 {
+    [Route("/[controller]")]
+    [ApiController]
     public class TravelDetailController : Controller
     {
         private readonly CreateTravelDetailCommandHandler _createTravelDetailCommandHandler;
@@ -29,7 +31,7 @@ namespace TravelWithMe.Travel.WebApi.Controllers
             return Ok(result);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("traveldetail/{id}")]
         public IActionResult GetTravelDetailById(string id)
         {
             var result = _getTravelDetailByIdQueryHandler.Handle(new GetTravelDetailByIdQuery(id));
@@ -50,7 +52,7 @@ namespace TravelWithMe.Travel.WebApi.Controllers
             return Ok("Gezi detayı başarılı güncellendi");
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult RemoveTravelDetail([FromBody] RemoveTravelDetailCommand command)
         {
             _removeTravelDetailCommandHandler.Handle(command);

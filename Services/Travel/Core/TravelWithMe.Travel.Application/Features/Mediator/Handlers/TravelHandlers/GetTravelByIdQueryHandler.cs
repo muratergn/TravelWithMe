@@ -22,6 +22,12 @@ namespace TravelWithMe.Travel.Application.Features.Mediator.Handlers.TravelHandl
         public async Task<GetTravelByIdQueryResult> Handle(GetTravelByIdQuery request, CancellationToken cancellationToken)
         {
             var values = await _repository.GetByIdAsync(request.Id);
+
+            if (values == null)
+            {
+                throw new Exception($"No travel found with ID {request.Id}");
+            }
+
             return new GetTravelByIdQueryResult {
                 Id = values.Id,
                 UserId = values.UserId,

@@ -1,12 +1,11 @@
-﻿using MediatR;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using MediatR;
 using TravelWithMe.Travel.Application.Features.Mediator.Commands.TravelCommands;
 using TravelWithMe.Travel.Application.Features.Mediator.Queries.TravelQueries;
 
-
 namespace TravelWithMe.Travel.WebApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("/[controller]")]
     [ApiController]
     public class TravelController : ControllerBase
     {
@@ -31,7 +30,7 @@ namespace TravelWithMe.Travel.WebApi.Controllers
             return Ok(result);
         }
 
-        [HttpGet("GetTravelByUserId/{id}")]
+        [HttpGet("gettravelbyuserid/{id}")]
         public async Task<IActionResult> GetTravelByUserId(string id)
         {
             var result = await _mediator.Send(new GetTravelByUserIdQuery(id));

@@ -23,6 +23,16 @@ namespace TravelWithMe.Travel.Persistence.Context
                 .HasMany(x => x.TravelDetails)
                 .WithOne(x => x.Travel)
                 .HasForeignKey(x => x.TravelId);
+
+            modelBuilder.Entity<TravelWithMe.Travel.Domain.Entities.Travel>()
+                .Property(t => t.Id)
+                .HasDefaultValueSql("NULL")
+                .ValueGeneratedOnAdd();
+
+            modelBuilder.Entity<TravelDetail>()
+                .Property(t => t.Id)
+                .HasDefaultValueSql("NULL")
+                .ValueGeneratedOnAdd();
         }
     }
 }
