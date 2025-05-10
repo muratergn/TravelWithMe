@@ -1,0 +1,6 @@
+@OppenIddict.ResourceAPI_HostAddress = http://localhost:5081
+
+GET {{OppenIddict.ResourceAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
